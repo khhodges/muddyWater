@@ -265,7 +265,8 @@ input[type='week'] {
   height: 119px;
   margin: 1.5em auto;
   text-indent: -9999px;
-  background: transparent url(images/muddy-waters-logo3.jpg) contain no-repeat 0 0;
+  background: transparent url(images/muddy-waters-logo3.png) no-repeat 0 0;
+    background-size: contain;
   overflow: hidden;
 }
 
