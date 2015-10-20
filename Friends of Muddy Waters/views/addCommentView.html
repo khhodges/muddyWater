@@ -1,15 +1,19 @@
 <div data-role="view" id="share" data-layout="default" data-transition="overlay:down" class="add-comment-view"
-    data-init="app.AddComment.init" data-show="app.AddComment.show" data-model="app.AddComment">
+     data-init="app.AddComment.init" data-show="app.AddComment.show" data-model="app.AddComment">
     <div data-role="header">
         <div data-role="navbar">
-            Friends
+            Win a Prize
             <a class="nav-button" data-align="left" data-role="backbutton">Cancel</a>
             <a class="nav-button" data-align="right" data-role="button" data-bind="click: saveComment">Done</a>
         </div>
     </div>
+
     <div id="enterComment" class="share-form-wrp" data-role="listview" data-style="inset">
         <div class="user-share">
-            <textarea id="newComment" placeholder="What's on your mind?" required validationMessage="Comment text is required!"></textarea>
+            <textarea id="newComment" placeholder="Enter your message!" required validationMessage="Comment text is required!"></textarea>
         </div>
+    </div>
+    <div class="picture-wrp">
+        <img id="picture" class="picture" src='styles/images/White-7-F (logo).png' width="100%">
     </div>
 </div>
