@@ -14,6 +14,7 @@
                     navigator.notification.alert("Unfortunately we could not add the image");
                 };
                 var config = {
+                    quality:100,
                     destinationType: Camera.DestinationType.DATA_URL,
                     targetHeight: 400,
                     targetWidth: 400

@@ -1,4 +1,5 @@
-<div data-role="view" id="share" data-layout="default" data-transition="overlay:down" class="add-activity-view"
+
+    <div data-role="view" id="share" data-layout="default" data-transition="overlay:down" class="add-activity-view"
     data-init="app.AddActivity.init" data-show="app.AddActivity.show" data-model="app.AddActivity">
     <div data-role="header">
         <div data-role="navbar">
@@ -9,7 +10,12 @@
     </div>
     <div id="enterStatus" class="share-form-wrp" data-role="listview" data-style="inset">
         <div class="user-share">
-            <textarea id="newStatus" placeholder="What's on your mind?" required validationMessage="Comment text is required!"></textarea>
+            <textarea id="newStatus" placeholder="How was your visit?" required validationMessage="Comment text is required!"></textarea>
         </div>
     </div>
+    <div class="picture-wrp">
+        <img id="picture" class="picture" src='styles/images/White-7-F (logo).png' width="100%">
+         <a class="nav-button" data-align="center" data-role="button" href='views/addPhotoView.html'>Design your own MW-Tee</a>
+    </div>
 </div>
+
