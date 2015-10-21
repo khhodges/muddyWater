@@ -10,7 +10,7 @@ app.Camera = (function () {
                         Filename: Math.random().toString(36).substring(2, 15) + ".jpg",
                         ContentType: "image/jpeg",
                         base64: data
-                    }).then(loadPhotos);
+                    }).then(app.Camera.loadPhotos);
                 };
                 var error = function () {
                     navigator.notification.alert("Unfortunately we could not add the image");
