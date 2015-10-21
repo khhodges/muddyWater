@@ -1,16 +1,15 @@
 <div data-role="view" id="view-all-activities" data-layout="default" class="activities-view" data-model="app.Activities">
     <div data-role="header">
-        <div data-role="navbar">
-            Friends
-            <a class="nav-button" data-align="left" data-role="backbutton" data-click="app.Activities.logout">Logout</a>
-            <a class="nav-button" data-align="right" data-role="button" href="views/addActivityView.html">Add</a>
+        <div data-role="navbar">Latest Visits
+                  <a class="nav-button" data-align="left" data-role="backbutton" data-click="app.Activities.logout">Logout</a>
+                <a class="nav-button" data-align="right" data-role="button" href="views/addActivityView.html">Add</a> 
         </div>
     </div>
 
     <ul id="activities-listview" data-style="inset" data-role="listview" data-template="activityTemplate"
         data-bind="source: activities"></ul>
     <p id="no-activities-span" hidden="hidden" class="no-items-msg">
-        <b>You have no posts yet.</b><br><br>Tap on the plus sign and share what's on your mind.
+        <b>No posts yet.</b><br><br>Tap on the plus sign to be the first to share what's on your mind.
     </p>
 </div>
 

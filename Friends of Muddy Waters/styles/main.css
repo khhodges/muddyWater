@@ -209,6 +209,10 @@ input[type='week'] {
   background-image: url(images/icon-arrow.png);
 }
 
+#friendsApp .nav-button-edit {
+  background-image: url(images/pencilx50.png);
+}
+
 #friendsApp .nav-button-back-d {
   background-image: url(images/icon-arrow_dark.png);
 }

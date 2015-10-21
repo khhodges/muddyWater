@@ -3,19 +3,20 @@
     data-init="app.AddActivity.init" data-show="app.AddActivity.show" data-model="app.AddActivity">
     <div data-role="header">
         <div data-role="navbar">
-            Friends
+            Remember your Visit
             <a class="nav-button" data-align="left" data-role="backbutton">Cancel</a>
             <a class="nav-button" data-align="right" data-role="button" data-bind="click: saveActivity">Done</a>
         </div>
     </div>
+        
     <div id="enterStatus" class="share-form-wrp" data-role="listview" data-style="inset">
         <div class="user-share">
-            <textarea id="newStatus" placeholder="How was your visit?" required validationMessage="Comment text is required!"></textarea>
+            <textarea id="newStatus" placeholder="Include a Message here!" required validationMessage="Comment text is required!"></textarea>
         </div>
     </div>
     <div class="picture-wrp">
-        <img id="picture" class="picture" src='styles/images/White-7-F (logo).png' width="100%">
-         <a class="nav-button" data-align="center" data-role="button" href='views/addPhotoView.html'>Design your own MW-Tee</a>
+         <a class="nav-button" data-style="inset" data-role="button" href='views/addPhotoView.html'>Add a Photo-Memory to a Muddy-Water's Tee</a>
+        <img id="picture" class="picture" src='styles/images/White-7-F (logo).png' width="100%" href='views/addPhotoView.html'>
     </div>
 </div>
 
