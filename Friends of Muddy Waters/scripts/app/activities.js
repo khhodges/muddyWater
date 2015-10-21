@@ -129,5 +129,4 @@ app.Activities = (function () {
     }());
 
     return activitiesViewModel;
-
 }());
