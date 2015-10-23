@@ -19,7 +19,7 @@ app.Camera = (function () {
                                                                                      }
                                                                                      $("#images").kendoMobileListView({
                                                                                                                           dataSource: files,
-                                                                                                                          template: "<div class='designer-wrp'><img id='picture' class='picture' src='styles/images/White-7-F (pyoi).png' ><div class='printer-info'><div class='user-avatar'><img src='#: data #' alt='on2t'></div></div></div>"
+                                                                                                                          template: "<div class='designer-wrp'><img id='picture' class='picture' src='styles/images/White-7-F.png' ><div class='printer-info'><div class='user-avatar'><img src='#: data #' alt='on2t'></div></div></div>"
                                                                                                                       });
                                                                                  });
                                                                              });

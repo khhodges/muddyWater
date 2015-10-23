@@ -8,8 +8,7 @@
             <a class="nav-button nav-button-icon nav-button-edit hide-text" data-align="right" data-role="button" data-bind="visible: isVisible" data-click="app.Activity.edit">Delete</a>
             <a class="nav-button nav-button-icon nav-button-delete hide-text" data-align="right" data-role="button" data-bind="visible: isVisible" data-click="app.Activity.remove">Delete</a>
         </div>
-       
-        
+
         <div class="picture-wrp">
             <img id="picture" class="picture" data-bind="attr:{src: PictureUrl()}" >
             <div class="user-info">
@@ -20,8 +19,15 @@
                 <span id="activityDate" class="time-span" data-bind="text: CreatedAtFormatted"></span>
             </div>
         </div>
- 
 
+        <div class='designer-wrp'>
+            <img id='picture' class='picture' src='styles/images/White-7-F.png' >
+            <div class='printer-info'>
+                <div class='user-avatar'>
+                    <img src='#: data #' alt='on2t'>
+                </div>
+            </div>
+        </div>
         
         <div class="content">
             <div class="activity-content">
@@ -37,7 +43,7 @@
 <!-- Comments Template -->
 <script type="text/x-kendo-template" id="commentsTemplate">
     <div class="user-avatar">
-        <img src="#: User().PictureUrl #" alt="#: User().DisplayName #">
+        <img src="#: User().PictureUrl # User().DisplayName #">
     </div>
     <div class="comment-content">
         <h2 class="person-name">#: User().DisplayName #</h2>
