@@ -417,6 +417,13 @@ input[type='week'] {
   padding: 0 1em .5em;
 }
 
+#friendsApp .activity-view .printer-info {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 0 1em .5em;
+}
+
 #friendsApp .activity-view .user-info .person-name,
 #friendsApp .activity-view .user-info .time-span {
   color: #fff;
@@ -489,7 +496,7 @@ input[type='week'] {
 #friendsApp .user-avatar img {
   width: 50px;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 #friendsApp .activity-content,
@@ -555,11 +562,11 @@ input[type='week'] {
 
 #friendsApp .activity-view .picture-wrp {
   position: relative;
-  height: 258px;
+  height: auto;
   margin: 0 auto;
   text-align: center;
   background: transparent url(images/default-image.jpg) no-repeat 50% 50%;
-  background-size: 100% 258px;
+  background-size: 100% auto;
   overflow: hidden;
 }
 
@@ -573,18 +580,42 @@ input[type='week'] {
   z-index: 1;
   display: block;
   width: 100%;
-  height: 258px;
+  height: auto;
   background: transparent url(images/background-picture.png) repeat-x 0 0;
+  background-size: cover;
+}
+#friendsApp .activity-view .designer-wrp {
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  background: transparent url(images/default-image.jpg) no-repeat 50% 50%;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+#friendsApp .activity-view .designer-wrp::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: transparent url(images/background-picture.png) repeat-x 0 0;
+  background-size: cover;
 }
 
 #friendsApp .activity-view .picture {
   position: relative;
-  top: 50%;
   left: 50%;
-  width: auto;
+  width: 100%;
   min-height: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
 #friendsApp .add-activity-view .km-leftitem,

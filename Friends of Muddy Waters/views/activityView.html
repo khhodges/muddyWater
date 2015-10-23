@@ -8,9 +8,10 @@
             <a class="nav-button nav-button-icon nav-button-edit hide-text" data-align="right" data-role="button" data-bind="visible: isVisible" data-click="app.Activity.edit">Delete</a>
             <a class="nav-button nav-button-icon nav-button-delete hide-text" data-align="right" data-role="button" data-bind="visible: isVisible" data-click="app.Activity.remove">Delete</a>
         </div>
-
+       
+        
         <div class="picture-wrp">
-            <img id="picture" class="picture" data-bind="attr:{src: PictureUrl()}" width="100%">
+            <img id="picture" class="picture" data-bind="attr:{src: PictureUrl()}" >
             <div class="user-info">
                 <div class="user-avatar">
                     <img data-bind="attr:{src: User().PictureUrl}" alt="#: User().DisplayName #">
@@ -19,6 +20,8 @@
                 <span id="activityDate" class="time-span" data-bind="text: CreatedAtFormatted"></span>
             </div>
         </div>
+ 
+
         
         <div class="content">
             <div class="activity-content">
