@@ -17,9 +17,10 @@ app.Camera = (function () {
                                                                                          var image = data.result[i];
                                                                                          files.push(image.Uri);
                                                                                      }
+                                                                                     //$("#images").kendoMobileView({content: "<div class='designer-wrp'><img id='picture' class='picture' src='styles/images/White-7-F.png' width='100%' ><div class='printer-info'><div class='designer-avatar'><img src='#: data #' alt='on2t'></div></div></div>"});
                                                                                      $("#images").kendoMobileListView({
                                                                                                                           dataSource: files,
-                                                                                                                          template: "<div class='designer-wrp'><img id='picture' class='picture' src='styles/images/White-7-F.png' ><div class='printer-info'><div class='user-avatar'><img src='#: data #' alt='on2t'></div></div></div>"
+                                                                                                                          template: "<div class='relative-image'><img id='picture' class='picture' src='styles/images/White-7-F.png' width='100%' ><div class='absolute-image'><img src='#: data #' alt='on2t'></div><a src='../www/index.html'>Change Shirt</a></div>"
                                                                                                                       });
                                                                                  });
                                                                              });
