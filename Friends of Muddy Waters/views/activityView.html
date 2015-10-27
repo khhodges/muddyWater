@@ -20,15 +20,7 @@
             </div>
         </div>
 
-        <div class='designer-wrp'>
-            <img id='picture' class='picture' src='styles/images/White-7-F.png' >
-            <div class='printer-info'>
-                <div class='design-avatar'>
-                    <img src='https://bs1.cdn.telerik.com/v1/zaXw8H0sTlOGZnOx/020e8330-79c2-11e5-bf35-777e7c73ecbe' alt='on2t'>
-                </div>
-            </div>
-        </div>
-        
+       
         <div class="content">
             <div class="activity-content">
                 <span id="activityText" data-bind="text: Text" class="user-share-txt"></span>
@@ -43,7 +35,7 @@
 <!-- Comments Template -->
 <script type="text/x-kendo-template" id="commentsTemplate">
     <div class="user-avatar">
-        <img src="#: User().PictureUrl # User().DisplayName #">
+        <img src="#: User().PictureUrl #" alt="#: User().DisplayName #">
     </div>
     <div class="comment-content">
         <h2 class="person-name">#: User().DisplayName #</h2>

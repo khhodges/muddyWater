@@ -8,9 +8,15 @@
                 <button class="nav-button" data-align="right" data-bind="click: addImage">Add</button>
             </div>
         </header>
-        <ul id="images" ><ui><div class="picture-wrp">
-            <img id="picture" class="picture" src='styles/images/White-7-F (pyoi).png' width="100%">
-        </div></ui>
-        </ul>
+        <div id="images" >
+            <div class="relative-image">
+                <img id="picture" class="picture" src='styles/images/White-7-F.png' data-bind="click: addImage"width="100%">
+            </div>
+            <div id="images" >
+                <div class="absolute-image">
+                    <img id="print" src='styles/images/default-image.jpg' width="100%">
+                </div>
+            </div>
+        </div>
     </div>
 </body>

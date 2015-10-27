@@ -417,11 +417,20 @@ input[type='week'] {
   padding: 0 1em .5em;
 }
 
-#friendsApp .activity-view .printer-info {
-  position: absolute;
+#friendsApp .activities-view .printer-info {
+  
   z-index: 2;
-  width: 100%;
-  padding: 0 1em .5em;
+  position: absolute; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+
+#friendsApp .activities-view .printer-info {
+  
+  z-index: 2;
+  position: relative; 
 }
 
 #friendsApp .activity-view .user-info .person-name,
@@ -499,6 +508,23 @@ input[type='week'] {
   border-radius: 50px;
 }
 
+
+#friendsApp .absolute-image img {
+  
+     text-align: center ;
+  
+}
+#friendsApp .designer-avatar {
+  text-align: center ;
+  width: 150px;
+}
+
+#friendsApp .designer-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
 #friendsApp .activity-content,
 #friendsApp .comment-content {
   position: relative;
@@ -570,6 +596,22 @@ input[type='week'] {
   overflow: hidden;
 }
 
+#friendsApp .relative-image {
+    position: relative;
+    border: 0px solid #8AC007;
+} 
+
+#friendsApp .absolute-image {
+    position: absolute;
+    top: 120px;
+  left: 50%;
+  width: 35%;
+  -webkit-transform: translate(-45%, 0%);
+          transform: translate(-45%, 0%);
+    
+    border: 0px solid #8AC007;
+}
+
 #friendsApp .activity-view .picture-wrp::before {
   content: '';
   position: absolute;
@@ -582,7 +624,7 @@ input[type='week'] {
   width: 100%;
   height: auto;
   background: transparent url(images/background-picture.png) repeat-x 0 0;
-  background-size: cover;
+  background-size: contain;
 }
 #friendsApp .activity-view .designer-wrp {
   position: relative;
@@ -607,6 +649,18 @@ input[type='week'] {
   height: auto;
   background: transparent url(images/background-picture.png) repeat-x 0 0;
   background-size: cover;
+}
+
+
+#friendsApp .activity-view .designer-picture {
+  position: absolute;
+    top:0;
+    left:0;
+  left: 50%;
+  width: 50%;
+  min-height: 50%;
+  -webkit-transform: translate(-25%, -25%);
+          transform: translate(-25%, -25%);
 }
 
 #friendsApp .activity-view .picture {
